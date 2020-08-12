@@ -134,7 +134,7 @@ const createSection = (linksArray, createPage) => (
 
 exports.sourceNodes = async ({ actions, createContentDigest }) => {
   const { createNode } = actions
-  for (let i = 1; i <= 100; i++) {
+  for (let i = 1; i <= 200; i++) {
     newsResponse = await axios.get(`https://www.thedp.com/section/news.json?page=${i}&per_page=20`)
     const { articles } = newsResponse.data
     articles.forEach(article => {
